@@ -8,6 +8,8 @@
 
 import Foundation
 
+// Future quotes to be used for random player.
+
 let futureQuotes = [
     "What would you like to be doing a month from now?",
     "Where you wish to be next year this time?",
@@ -16,6 +18,7 @@ let futureQuotes = [
     "In coming month what changes you wish to see in yourself?"
 ]
 
+// Past quotes to be used for random player.
 
 let pastQuotes = [
     "Describe your day 2 days ago?",

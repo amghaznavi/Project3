@@ -51,12 +51,13 @@ class ViewController: UIViewController {
         quoteIndex.text = ("Hey it's your turn, Player No. \(nextPlayer) ")
     }
     
+// Function to disable the buttons when it's not needed.
+    
     func enableDisableButtons (isEnabled: Bool) {
         futureIndex.isEnabled = isEnabled
         pastIndex.isEnabled = isEnabled
         resetPlayer.isEnabled = !isEnabled
         
     }
-    
     
 }

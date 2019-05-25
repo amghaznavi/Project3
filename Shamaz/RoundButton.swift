@@ -8,6 +8,8 @@
 
 import UIKit
 
+// Round edge buttons and change of colour when the buttons are disabled.
+
 class ButtonPLUS: UIButton {
     override func awakeFromNib() {
         super.awakeFromNib()
