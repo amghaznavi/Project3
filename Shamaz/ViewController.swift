@@ -5,7 +5,6 @@
 //  Created by Am GHAZNAVI on 21/05/2019.
 //  Copyright © 2019 Am GHAZNAVI. All rights reserved.
 //
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -21,27 +20,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
        enableDisableButtons(isEnabled: false)
-        
     }
 
     @IBAction func futureButton(_ sender: Any) {
-        
         enableDisableButtons(isEnabled: false)
         
-        func pastQuote () -> String {
-            return pastQuotes.randomElement()!
-        }
-        quoteIndex.text = pastQuote()
+        quoteIndex.text = pastQuotes.randomElement()!
     }
     
     @IBAction func pastButton(_ sender: Any) {
         enableDisableButtons(isEnabled: false)
         
-        
-        func futureQuote () -> String {
-            return futureQuotes.randomElement()!
-        }
-        quoteIndex.text = futureQuote()
+        quoteIndex.text = futureQuotes.randomElement()!
     }
     
     @IBAction func resetButton(_ sender: Any) {
@@ -49,15 +39,13 @@ class ViewController: UIViewController {
         
         let nextPlayer = Int.random(in: 1...10)
         quoteIndex.text = ("Hey it's your turn, Player No. \(nextPlayer) ")
+        
     }
-    
-// Function to disable the buttons when it's not needed.
+// Function to disable the buttons when not needed.
     
     func enableDisableButtons (isEnabled: Bool) {
         futureIndex.isEnabled = isEnabled
         pastIndex.isEnabled = isEnabled
         resetPlayer.isEnabled = !isEnabled
-        
     }
-    
 }
